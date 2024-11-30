@@ -1,6 +1,6 @@
 using System;
 
-namespace API
+namespace Name
 {
     public class Person
     {
