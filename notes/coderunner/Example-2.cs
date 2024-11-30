@@ -1,6 +1,5 @@
  // -- CODE RUNNER BELOW --
-
-//https://onecompiler.com/csharp/
+//onecompiler.com/csharp/
 
 using System;
 
