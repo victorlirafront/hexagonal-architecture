@@ -1,20 +1,20 @@
 namespace Domain
 {
-    public class Activity
+    public class Activity //Table
     {
         //Guid (Globally Unique Identifier) é um tipo fornecido pelo .NET para representar um identificador global único. É frequentemente usado como identificador único para objetos ou entidades.
         public Guid Id { get; set; } //get and set the value methods
 
-         public string Title { get; set; }
+         public string Title { get; set; } //collumn
 
-         public DateTime Date { get; set; }
+         public DateTime Date { get; set; }  //collumn
 
-         public int Description { get; set; }
+         public int Description { get; set; }  //collumn
 
-         public int Category { get; set; }
+         public int Category { get; set; }  //collumn
 
-         public string City {get; set;}
+         public string City {get; set;}  //collumn
 
-         public int Venue { get; set; }
+         public int Venue { get; set; }  //collumn
     }
 }
