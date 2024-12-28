@@ -1,3 +1,5 @@
-go mod init example/go-api
-go get github.com/gin-gonic/gin
-
+go mod init example/go-api       //dependencia
+go get github.com/gin-gonic/gin  //dependencia
+go run main.go                   //rodar o arquivo
+curl localhost:8080/books        //testar o endpoint
+curl localhost:8080/books --include --header "Content-Type: application/json" -d @body.json --request "POST"
