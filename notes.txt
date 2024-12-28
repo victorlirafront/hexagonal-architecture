@@ -3,3 +3,4 @@ go get github.com/gin-gonic/gin  //dependencia
 go run main.go                   //rodar o arquivo
 curl localhost:8080/books        //testar o endpoint
 curl localhost:8080/books --include --header "Content-Type: application/json" -d @body.json --request "POST"
+curl localhost:8080/books/2  //getById
