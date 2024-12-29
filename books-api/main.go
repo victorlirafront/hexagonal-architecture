@@ -26,14 +26,23 @@ func getBooks(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, books)
 }
 
+// bookById is a handler that retrieves a book by its ID provided as a URL parameter.
 func bookById(c *gin.Context) {
-	id := c.Param("id")
-	book, err := getBookById(id)
+	// Extracts the "id" parameter from the URL.
+	var id = c.Param("id")
+	// id := c.Param("id")
 
+	// Calls the getBookById function to fetch the book with the given ID.
+	book, err := getBookById(id) //The `:=` operator in Go is used for short variable declaration and assignment.
+
+	// Checks if an error occurred while fetching the book.
 	if err != nil {
-		c.IndentedJSON(http.StatusNotFound, gin.H{"message": "Book no found!"})
+		// Returns a JSON response with HTTP status 404 (Not Found) and an error message.
+		c.IndentedJSON(http.StatusNotFound, gin.H{"message": "Book not found!"})
 		return
 	}
+
+	// Returns the found book as a JSON response with HTTP status 200 (OK).
 	c.IndentedJSON(http.StatusOK, book)
 }
 
