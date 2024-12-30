@@ -5,35 +5,22 @@ import (
 )
 
 func main() {
-	// String original
+	// Original string
 	original := "Hello, Go!"
 
-	// Converte a string para um slice de bytes
+	// Convert the string to a slice of bytes
 	bytes := []byte(original)
-	fmt.Printf("Bytes originais: %v\n", bytes)
+	fmt.Printf("Original bytes: %v\n", bytes)
 
-	// Modifica os bytes (desloca cada caractere para o próximo na tabela ASCII)
+	// Modify the bytes (shift each character to the next in the ASCII table)
 	for i := range bytes {
 		bytes[i] += 1
 	}
 
-	// Exibe os bytes modificados
-	fmt.Printf("Bytes modificados: %v\n", bytes)
+	// Display the modified bytes
+	fmt.Printf("Modified bytes: %v\n", bytes)
 
-	// Converte os bytes de volta para uma string
+	// Convert the bytes back to a string
 	modified := string(bytes)
-	fmt.Printf("String modificada: %s\n", modified)
+	fmt.Printf("Modified string: %s\n", modified)
 }
-
-// O tipo byte em Go é um alias para o tipo uint8, representando um valor numérico de 8 bits sem sinal, variando de 0 a 255. Ele é amplamente utilizado para manipular dados binários, como caracteres individuais, arquivos e fluxos de rede.
-
-// Principais Características:
-// Interpretação Semântica:
-
-// Usado para indicar que o dado representa um byte de informação, em vez de um número genérico.
-// Manipulação de Strings:
-
-// Strings em Go são sequências imutáveis de bytes. O tipo byte permite acessar e modificar esses valores.
-// Facilidade em Operações Binárias:
-
-// Ideal para processar dados binários ou converter informações entre formatos.
