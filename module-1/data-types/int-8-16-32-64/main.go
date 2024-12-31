@@ -13,7 +13,6 @@ func main() {
 }
 
 // Em Go, os tipos int, int8, int16, int32, e int64 são usados para representar números inteiros com diferentes tamanhos em bits.
-
 // int: É um tipo inteiro cujo tamanho depende da arquitetura do sistema (32 bits em sistemas de 32 bits e 64 bits em sistemas de 64 bits).
 // int8: Representa um número inteiro com 8 bits (1 byte), com valores que variam de -128 a 127.
 // int16: Representa um número inteiro com 16 bits (2 bytes), com valores que variam de -32.768 a 32.767.
