@@ -13,7 +13,6 @@ func main() {
 }
 
 // Em Go, os tipos uint, uint8, uint16, uint32, e uint64 são usados para representar números inteiros não negativos (sem sinal), com diferentes tamanhos em bits.
-
 // uint: Um tipo inteiro sem sinal cujo tamanho depende da arquitetura do sistema (32 bits em sistemas de 32 bits e 64 bits em sistemas de 64 bits).
 // uint8: Representa um número inteiro sem sinal com 8 bits (1 byte), com valores que variam de 0 a 255.
 // uint16: Representa um número inteiro sem sinal com 16 bits (2 bytes), com valores que variam de 0 a 65.535.
