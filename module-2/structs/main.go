@@ -7,6 +7,7 @@ type User struct {
 	Age      int
 	LastName string
 	Gender   string
+	Address  string
 }
 
 func main() {
@@ -16,9 +17,10 @@ func main() {
 		Age:      28,
 		LastName: "Lira",
 		Gender:   "M",
+		Address:  "Jardim botânico, Clevert - SP",
 	}
 
-	fmt.Printf(" FirstName: %s! \n LastName: %s \n Age: %d \n Gender: %s \n", user.Name, user.LastName, user.Age, user.Gender)
+	fmt.Printf(" FirstName: %s! \n LastName: %s \n Age: %d \n Gender: %s \n %s", user.Name, user.LastName, user.Age, user.Gender, user.Address)
 }
 
 // A struct em Go se assemelha ao type ou interface em TypeScript.
