@@ -13,6 +13,6 @@ func write(text string) {
 }
 
 func main() {
-	go write("Hello World")
-	write("Programing in Go")
+	go write("Hello World")   // Executa essa função como uma goroutine (concorrente)
+	write("Programing in Go") // Executa normalmente (bloqueante)
 }
